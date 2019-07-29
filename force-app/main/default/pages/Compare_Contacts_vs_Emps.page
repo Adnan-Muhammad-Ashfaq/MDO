@@ -1,0 +1,6 @@
+<apex:page standardController="Account" tabStyle="Account">
+<apex:sectionHeader title="Compare Contacts vs Emps"/>
+<flow:interview name="Compare_Contacts_vs_Emps">
+ <apex:param name="AccountID" value="{!Account.Id}"/>
+  </flow:interview>
+ </apex:page>

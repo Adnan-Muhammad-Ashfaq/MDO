@@ -1,0 +1,55 @@
+<apex:page sidebar="false"  controller="TestTreeView">
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/jstree.min.js"></script>
+
+<div id="container">
+
+<ul>
+
+<li>User
+
+<apex:repeat value="{!result}" var="aa">
+
+<ul><li>{!aa}
+
+<ul><li>{!result[aa]}</li></ul>
+
+</li>
+
+</ul>
+
+</apex:repeat>
+
+</li>
+
+</ul>
+
+</div>
+
+<script>
+
+$(function() {
+
+$('#container').jstree();
+
+});
+
+</script>
+
+</body>
+
+</html>
+
+</apex:page>

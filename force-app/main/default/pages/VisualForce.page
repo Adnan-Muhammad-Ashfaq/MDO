@@ -1,0 +1,12 @@
+<apex:page >
+ <script>
+
+ function hello()
+ {
+     alert('Hello!');
+ }
+ </script>
+ <apex:form >
+  <apex:commandButton Value="Sync Accounts" onclick="hello();"/>
+ </apex:form>
+</apex:page>
