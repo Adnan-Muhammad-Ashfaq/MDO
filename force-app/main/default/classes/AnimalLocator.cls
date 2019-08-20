@@ -8,6 +8,7 @@ public class AnimalLocator
         request.setEndpoint('https://th-apex-http-callout.herokuapp.com/animals/'+idd);
         request.setMethod('GET');
         HttpResponse response = http.send(request);
+        
         // If the request is successful, parse the JSON response.
         if (response.getStatusCode() == 200) 
         {
